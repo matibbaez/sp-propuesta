@@ -82,7 +82,7 @@ const {
       </div>
     </header>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-brand-dark/98 backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-500 z-45 flex flex-col pt-36 pb-12 overflow-y-auto">
+    <div id="mobile-menu" class="fixed inset-0 bg-[#050505]/98 backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-500 z-45 flex flex-col pt-36 pb-12 overflow-y-auto">
       <div class="container mx-auto px-8 w-full flex flex-col h-full grow">
         <nav class="flex flex-col gap-8 w-full mt-4">
           <a href="#areas" class="mobile-link group flex items-center gap-6 border-b border-white/10 pb-6 translate-y-8 opacity-0 transition-all duration-500 delay-100">
@@ -105,7 +105,7 @@ const {
       <slot />
     </main>
 
-    <footer class="bg-brand-dark text-gray-400 pt-24 pb-8 border-t border-white/5 relative z-20 overflow-hidden">
+    <footer class="bg-[#050505] text-gray-400 pt-24 pb-8 border-t border-white/5 relative z-20 overflow-hidden">
       <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
       <div class="container mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-12 gap-16 lg:gap-12 mb-20 relative z-10">
         
@@ -127,9 +127,20 @@ const {
               </h2>
             </div>
           </a>
-          <p class="text-sm font-light leading-loose text-gray-400 mb-8 max-w-sm">
-            Brindamos soluciones legales con la seriedad y empatía que tu caso exige. Asesoramiento jurídico integral en Lanús y Provincia de Buenos Aires.
+          <p class="text-sm font-light leading-loose text-gray-400 mb-6 max-w-sm">
+            Brindamos soluciones legales con la seriedad y empatía que tu caso exige. Asesoramiento jurídico integral en Provincia de Buenos Aires.
           </p>
+          
+          <div class="flex items-start gap-3 mb-8">
+            <div class="mt-1 flex-shrink-0 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" /></svg>
+            </div>
+            <p class="text-xs font-body tracking-[0.1em] text-gray-400 uppercase leading-relaxed">
+              Mariano Moreno 253, B1834AEJ<br/>
+              <span class="text-gray-500">Temperley, Buenos Aires</span>
+            </p>
+          </div>
+
           <a href="#contacto" class="inline-flex items-center gap-3 text-white hover:text-gray-300 transition-colors font-body text-[11px] tracking-widest uppercase font-bold">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" /><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" /></svg>
             Consultas Online
@@ -155,8 +166,8 @@ const {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-white"><path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clip-rule="evenodd" /></svg>
                 Canal Directo
               </li>
-              <li class="pl-8 font-bold text-white tracking-widest text-[10px] uppercase">Evaluación de tu caso</li>
-              <li class="pl-8 text-xs pt-1">Escribinos y te orientamos sin compromiso.</li>
+              <li class="pl-8 font-bold text-white tracking-widest text-[10px] uppercase">Llamanos o escribinos</li>
+              <li class="pl-8 text-xs pt-1">11 2455-1244</li>
             </ul>
           </div>
         </div>
@@ -168,7 +179,7 @@ const {
       </div>
     </footer>
 
-    <a href="https://wa.me/5491100000000" target="_blank" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:bg-white hover:text-[#25D366] transition-all duration-500 flex items-center justify-center border border-white/10">
+    <a href="https://wa.me/5491124551244" target="_blank" aria-label="Contactar por WhatsApp" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-105 hover:bg-white hover:text-[#25D366] transition-all duration-500 flex items-center justify-center border border-white/10">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp relative z-10" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
     </a>
 
@@ -202,8 +213,7 @@ const {
         menu?.classList.remove('opacity-100', 'pointer-events-auto');
         menu?.classList.add('opacity-0', 'pointer-events-none');
         
-        // Al cerrar, las líneas vuelven a negro si hay scroll, o blanco si estamos arriba
-        const targetLineColor = isScrolled ? 'bg-brand-dark' : 'bg-white';
+        const targetLineColor = isScrolled ? 'bg-[#050505]' : 'bg-white';
         line1?.classList.replace('bg-white', targetLineColor);
         line3?.classList.replace('bg-white', targetLineColor);
         
@@ -221,9 +231,9 @@ const {
             header?.classList.replace('border-transparent', 'border-gray-100');
             header?.classList.add('backdrop-blur-xl', 'shadow-sm');
             
-            logoLink?.classList.replace('text-white', 'text-brand-dark');
-            logoSvg?.classList.replace('text-white', 'text-brand-dark');
-            logoAccent?.classList.replace('text-white', 'text-brand-dark');
+            logoLink?.classList.replace('text-white', 'text-[#050505]');
+            logoSvg?.classList.replace('text-white', 'text-[#050505]');
+            logoAccent?.classList.replace('text-white', 'text-[#050505]');
         }
         lenis.start();
       };
@@ -233,8 +243,7 @@ const {
         menu?.classList.remove('opacity-0', 'pointer-events-none');
         menu?.classList.add('opacity-100', 'pointer-events-auto');
         
-        // Al abrir (fondo negro), forzamos la X a ser blanca
-        const currentLineColor = isScrolled ? 'bg-brand-dark' : 'bg-white';
+        const currentLineColor = isScrolled ? 'bg-[#050505]' : 'bg-white';
         line1?.classList.replace(currentLineColor, 'bg-white');
         line3?.classList.replace(currentLineColor, 'bg-white');
         
@@ -252,9 +261,9 @@ const {
             header?.classList.replace('border-gray-100', 'border-transparent');
             header?.classList.remove('backdrop-blur-xl', 'shadow-sm');
             
-            logoLink?.classList.replace('text-brand-dark', 'text-white');
-            logoSvg?.classList.replace('text-brand-dark', 'text-white');
-            logoAccent?.classList.replace('text-brand-dark', 'text-white');
+            logoLink?.classList.replace('text-[#050505]', 'text-white');
+            logoSvg?.classList.replace('text-[#050505]', 'text-white');
+            logoAccent?.classList.replace('text-[#050505]', 'text-white');
         }
         lenis.stop();
       };
@@ -289,22 +298,22 @@ const {
             header?.classList.add('backdrop-blur-xl', 'shadow-sm');
             header?.classList.replace('py-6', 'py-4');
 
-            logoLink?.classList.replace('text-white', 'text-brand-dark');
-            logoSvg?.classList.replace('text-white', 'text-brand-dark');
-            logoAccent?.classList.replace('text-white', 'text-brand-dark');
+            logoLink?.classList.replace('text-white', 'text-[#050505]');
+            logoSvg?.classList.replace('text-white', 'text-[#050505]');
+            logoAccent?.classList.replace('text-white', 'text-[#050505]');
             logoSub?.classList.replace('text-gray-300', 'text-gray-500');
 
-            navLinks?.classList.replace('text-white', 'text-brand-dark');
+            navLinks?.classList.replace('text-white', 'text-[#050505]');
             navDivider?.classList.replace('bg-white/20', 'bg-gray-200');
 
-            navBtn?.classList.replace('border-white', 'border-brand-dark');
-            navBtn?.classList.replace('text-white', 'text-brand-dark');
-            navBtn?.classList.replace('hover:bg-white', 'hover:bg-brand-dark');
+            navBtn?.classList.replace('border-white', 'border-[#050505]');
+            navBtn?.classList.replace('text-white', 'text-[#050505]');
+            navBtn?.classList.replace('hover:bg-white', 'hover:bg-[#050505]');
             navBtn?.classList.replace('hover:text-black', 'hover:text-white');
 
-            line1?.classList.replace('bg-white', 'bg-brand-dark');
-            line2?.classList.replace('bg-white', 'bg-brand-dark');
-            line3?.classList.replace('bg-white', 'bg-brand-dark');
+            line1?.classList.replace('bg-white', 'bg-[#050505]');
+            line2?.classList.replace('bg-white', 'bg-[#050505]');
+            line3?.classList.replace('bg-white', 'bg-[#050505]');
             
           } else if (e.scroll <= 50 && isScrolled) {
             isScrolled = false;
@@ -313,22 +322,22 @@ const {
             header?.classList.remove('backdrop-blur-xl', 'shadow-sm');
             header?.classList.replace('py-4', 'py-6');
 
-            logoLink?.classList.replace('text-brand-dark', 'text-white');
-            logoSvg?.classList.replace('text-brand-dark', 'text-white');
-            logoAccent?.classList.replace('text-brand-dark', 'text-white');
+            logoLink?.classList.replace('text-[#050505]', 'text-white');
+            logoSvg?.classList.replace('text-[#050505]', 'text-white');
+            logoAccent?.classList.replace('text-[#050505]', 'text-white');
             logoSub?.classList.replace('text-gray-500', 'text-gray-300');
 
-            navLinks?.classList.replace('text-brand-dark', 'text-white');
+            navLinks?.classList.replace('text-[#050505]', 'text-white');
             navDivider?.classList.replace('bg-gray-200', 'bg-white/20');
 
-            navBtn?.classList.replace('border-brand-dark', 'border-white');
-            navBtn?.classList.replace('text-brand-dark', 'text-white');
-            navBtn?.classList.replace('hover:bg-brand-dark', 'hover:bg-white');
+            navBtn?.classList.replace('border-[#050505]', 'border-white');
+            navBtn?.classList.replace('text-[#050505]', 'text-white');
+            navBtn?.classList.replace('hover:bg-[#050505]', 'hover:bg-white');
             navBtn?.classList.replace('hover:text-white', 'hover:text-black');
 
-            line1?.classList.replace('bg-brand-dark', 'bg-white');
-            line2?.classList.replace('bg-brand-dark', 'bg-white');
-            line3?.classList.replace('bg-brand-dark', 'bg-white');
+            line1?.classList.replace('bg-[#050505]', 'bg-white');
+            line2?.classList.replace('bg-[#050505]', 'bg-white');
+            line3?.classList.replace('bg-[#050505]', 'bg-white');
           }
         }
       });

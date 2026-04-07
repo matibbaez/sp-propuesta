@@ -4,17 +4,17 @@ import Hero from '../components/Hero.astro';
 import Situacion from '../components/Situacion.astro';
 import Areas from '../components/Areas.astro';
 import Doctor from '../components/Doctor.astro';
+import ShowcaseEstudio from '../components/ShowcaseEstudio.astro'; // IMPORTAMOS LA NUEVA SECCIÓN
 import Testimonios from '../components/Testimonios.astro';
-import Estudio from '../components/Estudio.astro';
 import Contacto from '../components/Contacto.astro';
+import Estudio from '../components/Estudio.astro';
 ---
 
 <Layout title="Estudio Jurídico Dr. Sebastián Penas | Asesoramiento Integral">
   <Hero />
-  <Doctor />
   <Situacion />
+  <Doctor />
   <Areas />
-  <Estudio />
-  <Testimonios />
+  <ShowcaseEstudio /> <Estudio /> <Testimonios />
   <Contacto />
 </Layout>
